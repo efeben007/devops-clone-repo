@@ -8,7 +8,7 @@
 
 <p><span style='font-size: 18px; font-family: "Comic Sans MS", sans-serif;'>Regards,</span></p>
 
-<p><strong><span style="font-size: 19px; font-family: Georgia, serif;">Lady Ann</span></strong></p>   
+<p><strong><span style="font-size: 19px; font-family: Georgia, serif;">Efe Ben</span></strong></p>   
 
 </body>
 </html>
