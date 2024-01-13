@@ -8,11 +8,11 @@
                 <version>2.2.4.RELEASE</version>
                 <relativePath/> <!-- lookup parent from repository -->
         </parent>
-        <groupId>com.mobanntechnologies</groupId>
-        <artifactId>mobanntechnologies</artifactId>
+        <groupId>com.Stanleyobazee</groupId>
+        <artifactId>Stanleyobazee</artifactId>
         <version>1.0</version>
         <packaging>war</packaging>
-        <name>mobannapp</name>
+        <name>project-a</name>
         <description>Class DevOps project at mobannapp</description>
 
         <properties>
@@ -27,7 +27,7 @@
               <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
         <configuration>
-             <webXml>/home/ubuntu/git-project/devops-1/webapp/src/main/webapp/WEB-INF\web.xml</webXml>
+             <webXml>/home/ubuntu/git-project/devops-clone-repo/webapp/src/main/webapp/WEB-INF\web.xml</webXml>
             </configuration>
       </plugin>
 
@@ -181,5 +181,12 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-94-227.ec2.internal-releases</name>
+        <url>http://3.227.46.127:8082/artifactory/project-a-libs-release</url>
+    </repository>
+</distributionManagement>
 	  
 </project>
