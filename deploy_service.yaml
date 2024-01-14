@@ -1,0 +1,40 @@
+#Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: efe-deploy
+  labels:
+    app: olu-app
+spec:
+ replicas: 5
+ selector:
+   matchLabels:
+     app: efe-app
+ template:
+   metadata:
+     labels:
+       app: efe-app
+   spec:
+     containers:
+     - name: efe-con
+       image: efeben007/efe-repo:19112023-1410
+       ports:
+       - containerPort: 8080
+
+---
+#Service Type nodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: efe-service
+  labels:
+    app: efe-app
+spec:
+  selector:
+    app: efe-app
+  type: NodePort
+  ports:
+  - nodePort: 31000
+    port: 8080
+    targetPort: 8080
+
