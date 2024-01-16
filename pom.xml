@@ -8,12 +8,12 @@
                 <version>2.2.4.RELEASE</version>
                 <relativePath/> <!-- lookup parent from repository -->
         </parent>
-        <groupId>com.Stanleyobazee</groupId>
-        <artifactId>Stanleyobazee</artifactId>
-        <version>1.0</version>
+        <groupId>com.mobanntechnologies</groupId>
+        <artifactId>mobanntechnologies</artifactId>
+        <version>1.0-RELEASE</version>
         <packaging>war</packaging>
-        <name>project-a</name>
-        <description>Class DevOps project at mobannapp</description>
+        <name>mobannapp</name>
+        <description>DevOps II with mobanntechnologies</description>
 
         <properties>
                 <java.version>1.8</java.version>
@@ -188,5 +188,4 @@
         <url>http://3.227.46.127:8082/artifactory/project-a-libs-release</url>
     </repository>
 </distributionManagement>
-	  
-</project>
+ </project>
